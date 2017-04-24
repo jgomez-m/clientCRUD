@@ -28,7 +28,7 @@ public class ClientREST {
     
     @GET
     @Path("/findAll")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public List<Client> findAll() {
         List<Client> list = dao.getAllClients();
         return list;
